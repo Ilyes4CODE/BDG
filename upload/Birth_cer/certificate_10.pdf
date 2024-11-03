@@ -1,0 +1,3398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <title>OSError
+          at /Registrations/api/generate-certificate/</title>
+  <style>
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font-family: sans-serif; background-color:#fff; color:#000; }
+    body > :where(header, main, footer) { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; }
+    h2 { margin-bottom:.8em; }
+    h3 { margin:1em 0 .5em 0; }
+    h4 { margin:0 0 .5em 0; font-weight: normal; }
+    code, pre { font-size: 100%; white-space: pre-wrap; word-break: break-word; }
+    summary { cursor: pointer; }
+    table { border:1px solid #ccc; border-collapse: collapse; width:100%; background:white; }
+    tbody td, tbody th { vertical-align:top; padding:2px 3px; }
+    thead th {
+      padding:1px 6px 1px 3px; background:#fefefe; text-align:left;
+      font-weight:normal; font-size: 0.6875rem; border:1px solid #ddd;
+    }
+    tbody th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    table.vars { margin:5px 10px 2px 40px; width: auto; }
+    table.vars td, table.req td { font-family:monospace; }
+    table td.code { width:100%; }
+    table td.code pre { overflow:hidden; }
+    table.source th { color:#666; }
+    table.source td { font-family:monospace; white-space:pre; border-bottom:1px solid #eee; }
+    ul.traceback { list-style-type:none; color: #222; }
+    ul.traceback li.cause { word-break: break-word; }
+    ul.traceback li.frame { padding-bottom:1em; color:#4f4f4f; }
+    ul.traceback li.user { background-color:#e0e0e0; color:#000 }
+    div.context { padding:10px 0; overflow:hidden; }
+    div.context ol { padding-left:30px; margin:0 10px; list-style-position: inside; }
+    div.context ol li { font-family:monospace; white-space:pre; color:#777; cursor:pointer; padding-left: 2px; }
+    div.context ol li pre { display:inline; }
+    div.context ol.context-line li { color:#464646; background-color:#dfdfdf; padding: 3px 2px; }
+    div.context ol.context-line li span { position:absolute; right:32px; }
+    .user div.context ol.context-line li { background-color:#bbb; color:#000; }
+    .user div.context ol li { color:#666; }
+    div.commands, summary.commands { margin-left: 40px; }
+    div.commands a, summary.commands { color:#555; text-decoration:none; }
+    .user div.commands a { color: black; }
+    #summary { background: #ffc; }
+    #summary h2 { font-weight: normal; color: #666; }
+    #info { padding: 0; }
+    #info > * { padding:10px 20px; }
+    #explanation { background:#eee; }
+    #template, #template-not-exist { background:#f6f6f6; }
+    #template-not-exist ul { margin: 0 0 10px 20px; }
+    #template-not-exist .postmortem-section { margin-bottom: 3px; }
+    #unicode-hint { background:#eee; }
+    #traceback { background:#eee; }
+    #requestinfo { background:#f6f6f6; padding-left:120px; }
+    #summary table { border:none; background:transparent; }
+    #requestinfo h2, #requestinfo h3 { position:relative; margin-left:-100px; }
+    #requestinfo h3 { margin-bottom:-1em; }
+    .error { background: #ffc; }
+    .specific { color:#cc3300; font-weight:bold; }
+    h2 span.commands { font-size: 0.7rem; font-weight:normal; }
+    span.commands a:link {color:#5E5694;}
+    pre.exception_value { font-family: sans-serif; color: #575757; font-size: 1.5rem; margin: 10px 0 10px 0; }
+    .append-bottom { margin-bottom: 10px; }
+    .fname { user-select: all; }
+  </style>
+  
+  <script>
+    function hideAll(elems) {
+      for (var e = 0; e < elems.length; e++) {
+        elems[e].style.display = 'none';
+      }
+    }
+    window.onload = function() {
+      hideAll(document.querySelectorAll('ol.pre-context'));
+      hideAll(document.querySelectorAll('ol.post-context'));
+      hideAll(document.querySelectorAll('div.pastebin'));
+    }
+    function toggle() {
+      for (var i = 0; i < arguments.length; i++) {
+        var e = document.getElementById(arguments[i]);
+        if (e) {
+          e.style.display = e.style.display == 'none' ? 'block': 'none';
+        }
+      }
+      return false;
+    }
+    function switchPastebinFriendly(link) {
+      s1 = "Switch to copy-and-paste view";
+      s2 = "Switch back to interactive view";
+      link.textContent = link.textContent.trim() == s1 ? s2: s1;
+      toggle('browserTraceback', 'pastebinTraceback');
+      return false;
+    }
+  </script>
+  
+</head>
+<body>
+<header id="summary">
+  <h1>OSError
+       at /Registrations/api/generate-certificate/</h1>
+  <pre class="exception_value">wkhtmltopdf reported an error:
+Exit with code 1 due to network error: HostNotFoundError
+</pre>
+  <table class="meta">
+
+    <tr>
+      <th scope="row">Request Method:</th>
+      <td>POST</td>
+    </tr>
+    <tr>
+      <th scope="row">Request URL:</th>
+      <td>http://127.0.0.1:8000/Registrations/api/generate-certificate/</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Django Version:</th>
+      <td>5.1</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Exception Type:</th>
+      <td>OSError</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Value:</th>
+      <td><pre>wkhtmltopdf reported an error:
+Exit with code 1 due to network error: HostNotFoundError
+</pre></td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Exception Location:</th>
+      <td><span class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\pdfkit.py</span>, line 155, in handle_error</td>
+    </tr>
+
+
+    <tr>
+      <th scope="row">Raised during:</th>
+      <td>Registrations.views.generate_certificate_pdf</td>
+    </tr>
+
+    <tr>
+      <th scope="row">Python Executable:</th>
+      <td>C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Scripts\python.exe</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Version:</th>
+      <td>3.12.5</td>
+    </tr>
+    <tr>
+      <th scope="row">Python Path:</th>
+      <td><pre><code>[&quot;C:\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend\\BDG&quot;,
+ &quot;C:\\Users\\ADAM&#x27;S &quot;
+ &#x27;ProTek\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip&#x27;,
+ &quot;C:\\Users\\ADAM&#x27;S ProTek\\AppData\\Local\\Programs\\Python\\Python312\\DLLs&quot;,
+ &quot;C:\\Users\\ADAM&#x27;S ProTek\\AppData\\Local\\Programs\\Python\\Python312\\Lib&quot;,
+ &quot;C:\\Users\\ADAM&#x27;S ProTek\\AppData\\Local\\Programs\\Python\\Python312&quot;,
+ &quot;C:\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend&quot;,
+ &quot;C:\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend\\Lib\\site-packages&quot;]</code></pre></td>
+    </tr>
+    <tr>
+      <th scope="row">Server time:</th>
+      <td>Sun, 22 Sep 2024 22:07:57 +0000</td>
+    </tr>
+  </table>
+</header>
+
+<main id="info">
+
+
+
+
+<div id="traceback">
+  <h2>Traceback <span class="commands"><a href="#" onclick="return switchPastebinFriendly(this);">
+    Switch to copy-and-paste view</a></span>
+  </h2>
+  <div id="browserTraceback">
+    <ul class="traceback">
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\core\handlers\exception.py</code>, line 55, in inner
+          
+
+          
+            <div class="context" id="c2698648466432">
+              
+                <ol start="48" class="pre-context" id="pre2698648466432">
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>        return inner</pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>        @wraps(get_response)</pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>        def inner(request):</pre></li>
+                
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="55" class="context-line">
+                <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>                response = get_response(request)
+                               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='56' class="post-context" id="post2698648466432">
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>            except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>                response = response_for_exception(request, exc)</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>            return response</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre>        return inner</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466432', 'post2698648466432')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648466432">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>OSError(&#x27;wkhtmltopdf reported an error:\nExit with code 1 due to network error: HostNotFoundError\r\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>get_response</td>
+                    <td class="code"><pre>&lt;bound method BaseHandler._get_response of &lt;django.core.handlers.wsgi.WSGIHandler object at 0x0000027453CCFF50&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\core\handlers\base.py</code>, line 197, in _get_response
+          
+
+          
+            <div class="context" id="c2698648466880">
+              
+                <ol start="190" class="pre-context" id="pre2698648466880">
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>        if response is None:</pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>            wrapped_callback = self.make_view_atomic(callback)</pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>            # If it is an asynchronous view, run it in a subthread.</pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>            if iscoroutinefunction(wrapped_callback):</pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>                wrapped_callback = async_to_sync(wrapped_callback)</pre></li>
+                
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>            try:</pre></li>
+                
+                </ol>
+              
+              <ol start="197" class="context-line">
+                <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>                response = wrapped_callback(request, *callback_args, **callback_kwargs)
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='198' class="post-context" id="post2698648466880">
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>            except Exception as e:</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>                response = self.process_exception_by_middleware(e, request)</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>                if response is None:</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>                    raise</pre></li>
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648466880', 'post2698648466880')"><pre>        # Complain if the view returned None (a common error).</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648466880">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x0000027453BF07C0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>callback_kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>middleware_method</td>
+                    <td class="code"><pre>&lt;bound method CsrfViewMiddleware.process_view of &lt;CsrfViewMiddleware get_response=convert_exception_to_response.&lt;locals&gt;.inner&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;django.core.handlers.wsgi.WSGIHandler object at 0x0000027453CCFF50&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>wrapped_callback</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x0000027453BF07C0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\views\decorators\csrf.py</code>, line 65, in _view_wrapper
+          
+
+          
+            <div class="context" id="c2698648464960">
+              
+                <ol start="58" class="pre-context" id="pre2698648464960">
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>        async def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>            return await view_func(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>    else:</pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>        def _view_wrapper(request, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="65" class="context-line">
+                <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>            return view_func(request, *args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='66' class="post-context" id="post2698648464960">
+                  
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>    _view_wrapper.csrf_exempt = True</pre></li>
+                  
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648464960', 'post2698648464960')"><pre>    return wraps(view_func)(_view_wrapper)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648464960">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>view_func</td>
+                    <td class="code"><pre>&lt;function View.as_view.&lt;locals&gt;.view at 0x0000027453BF0720&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame django">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\views\generic\base.py</code>, line 104, in view
+          
+
+          
+            <div class="context" id="c2698650757888">
+              
+                <ol start="97" class="pre-context" id="pre2698650757888">
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>            self = cls(**initkwargs)</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>            self.setup(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>            if not hasattr(self, &quot;request&quot;):</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>                raise AttributeError(</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>                    &quot;%s instance has no &#x27;request&#x27; attribute. Did you override &quot;</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>                    &quot;setup() and forget to call super()?&quot; % cls.__name__</pre></li>
+                
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>                )</pre></li>
+                
+                </ol>
+              
+              <ol start="104" class="context-line">
+                <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>            return self.dispatch(request, *args, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='105' class="post-context" id="post2698650757888">
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>        view.view_class = cls</pre></li>
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>        view.view_initkwargs = initkwargs</pre></li>
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>        # __name__ and __qualname__ are intentionally left unchanged as</pre></li>
+                  
+                  <li onclick="toggle('pre2698650757888', 'post2698650757888')"><pre>        # view_class should be used to robustly determine the name of the view</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698650757888">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cls</td>
+                    <td class="code"><pre>&lt;class &#x27;Registrations.views.WrappedAPIView&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>initkwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;WSGIRequest: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py</code>, line 509, in dispatch
+          
+
+          
+            <div class="context" id="c2698648465024">
+              
+                <ol start="502" class="pre-context" id="pre2698648465024">
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>            response = handler(request, *args, **kwargs)</pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>        except Exception as exc:</pre></li>
+                
+                </ol>
+              
+              <ol start="509" class="context-line">
+                <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>            response = self.handle_exception(exc)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='510' class="post-context" id="post2698648465024">
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>        return self.response</pre></li>
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>    def options(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre2698648465024', 'post2698648465024')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648465024">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method api_view.&lt;locals&gt;.decorator.&lt;locals&gt;.handler of &lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py</code>, line 469, in handle_exception
+          
+
+          
+            <div class="context" id="c2698648464768">
+              
+                <ol start="462" class="pre-context" id="pre2698648464768">
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        exception_handler = self.get_exception_handler()</pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        context = self.get_exception_handler_context()</pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        response = exception_handler(exc, context)</pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        if response is None:</pre></li>
+                
+                </ol>
+              
+              <ol start="469" class="context-line">
+                <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>            self.raise_uncaught_exception(exc)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='470' class="post-context" id="post2698648464768">
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        response.exception = True</pre></li>
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        return response</pre></li>
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                  
+                  <li onclick="toggle('pre2698648464768', 'post2698648464768')"><pre>        if settings.DEBUG:</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648464768">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>context</td>
+                    <td class="code"><pre>{&#x27;args&#x27;: (),
+ &#x27;kwargs&#x27;: {},
+ &#x27;request&#x27;: &lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;,
+ &#x27;view&#x27;: &lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>OSError(&#x27;wkhtmltopdf reported an error:\nExit with code 1 due to network error: HostNotFoundError\r\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exception_handler</td>
+                    <td class="code"><pre>&lt;function exception_handler at 0x0000027453BC1EE0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>response</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py</code>, line 480, in raise_uncaught_exception
+          
+
+          
+            <div class="context" id="c2698650758336">
+              
+                <ol start="473" class="pre-context" id="pre2698650758336">
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>    def raise_uncaught_exception(self, exc):</pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>        if settings.DEBUG:</pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>            request = self.request</pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>            renderer_format = getattr(request.accepted_renderer, &#x27;format&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>            use_plaintext_traceback = renderer_format not in (&#x27;html&#x27;, &#x27;api&#x27;, &#x27;admin&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>            request.force_plaintext_errors(use_plaintext_traceback)</pre></li>
+                
+                </ol>
+              
+              <ol start="480" class="context-line">
+                <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>        raise exc
+             ^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='481' class="post-context" id="post2698650758336">
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>    # Note: Views are made CSRF exempt from within `as_view` as to prevent</pre></li>
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>    # accidental removal of this exemption in cases where `dispatch` needs to</pre></li>
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>    # be overridden.</pre></li>
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>    def dispatch(self, request, *args, **kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre2698650758336', 'post2698650758336')"><pre>        &quot;&quot;&quot;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698650758336">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exc</td>
+                    <td class="code"><pre>OSError(&#x27;wkhtmltopdf reported an error:\nExit with code 1 due to network error: HostNotFoundError\r\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>renderer_format</td>
+                    <td class="code"><pre>&#x27;json&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>use_plaintext_traceback</td>
+                    <td class="code"><pre>True</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py</code>, line 506, in dispatch
+          
+
+          
+            <div class="context" id="c2698648461312">
+              
+                <ol start="499" class="pre-context" id="pre2698648461312">
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>            # Get the appropriate handler method</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>            if request.method.lower() in self.http_method_names:</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>                handler = getattr(self, request.method.lower(),</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>                                  self.http_method_not_allowed)</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>            else:</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>                handler = self.http_method_not_allowed</pre></li>
+                
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="506" class="context-line">
+                <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>            response = handler(request, *args, **kwargs)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='507' class="post-context" id="post2698648461312">
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>        except Exception as exc:</pre></li>
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>            response = self.handle_exception(exc)</pre></li>
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>        self.response = self.finalize_response(request, response, *args, **kwargs)</pre></li>
+                  
+                  <li onclick="toggle('pre2698648461312', 'post2698648461312')"><pre>        return self.response</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698648461312">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>()</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>handler</td>
+                    <td class="code"><pre>&lt;bound method api_view.&lt;locals&gt;.decorator.&lt;locals&gt;.handler of &lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\decorators.py</code>, line 50, in handler
+          
+
+          
+            <div class="context" id="c2698646890880">
+              
+                <ol start="43" class="pre-context" id="pre2698646890880">
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        assert isinstance(http_method_names, (list, tuple)), \</pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>            &#x27;@api_view expected a list of strings, received %s&#x27; % type(http_method_names).__name__</pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        allowed_methods = set(http_method_names) | {&#x27;options&#x27;}</pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        WrappedAPIView.http_method_names = [method.lower() for method in allowed_methods]</pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        def handler(self, *args, **kwargs):</pre></li>
+                
+                </ol>
+              
+              <ol start="50" class="context-line">
+                <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>            return func(*args, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='51' class="post-context" id="post2698646890880">
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        for method in http_method_names:</pre></li>
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>            setattr(WrappedAPIView, method.lower(), handler)</pre></li>
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        WrappedAPIView.__name__ = func.__name__</pre></li>
+                  
+                  <li onclick="toggle('pre2698646890880', 'post2698646890880')"><pre>        WrappedAPIView.__module__ = func.__module__</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698646890880">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>(&lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;,)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>func</td>
+                    <td class="code"><pre>&lt;function generate_certificate_pdf at 0x0000027453BF0540&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>kwargs</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;Registrations.views.WrappedAPIView object at 0x0000027453FE25A0&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\BDG\Registrations\views.py</code>, line 63, in generate_certificate_pdf
+          
+
+          
+            <div class="context" id="c2698647125248">
+              
+                <ol start="56" class="pre-context" id="pre2698647125248">
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>        &#x27;address&#x27;: data.get(&#x27;address&#x27;),</pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    }</pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    </pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    # Render the HTML template with the data</pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    html_content = render_to_string(&#x27;certificate.html&#x27;, certificate_data)</pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    # Convert the rendered HTML to PDF</pre></li>
+                
+                </ol>
+              
+              <ol start="63" class="context-line">
+                <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    pdf = pdfkit.from_string(html_content, False, configuration=config)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='64' class="post-context" id="post2698647125248">
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    # Create a response object to serve the PDF as a download</pre></li>
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    response = HttpResponse(pdf, content_type=&#x27;application/pdf&#x27;)</pre></li>
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    # Force the file to be downloaded with a filename &#x27;certificate.pdf&#x27;</pre></li>
+                  
+                  <li onclick="toggle('pre2698647125248', 'post2698647125248')"><pre>    response[&#x27;Content-Disposition&#x27;] = &#x27;attachment; filename=&quot;certificate.pdf&quot;&#x27;</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698647125248">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>certificate_data</td>
+                    <td class="code"><pre>{&#x27;address&#x27;: None,
+ &#x27;arabic_first_name&#x27;: None,
+ &#x27;arabic_last_name&#x27;: None,
+ &#x27;birthday&#x27;: None,
+ &#x27;branche_id&#x27;: None,
+ &#x27;latin_fullname&#x27;: None}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>data</td>
+                    <td class="code"><pre>{}</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>html_content</td>
+                    <td class="code"><pre>(&#x27;&lt;!DOCTYPE html&gt;\n&#x27;
+ &#x27;&lt;html lang=&quot;ar&quot;&gt;\n&#x27;
+ &#x27;  &lt;head&gt;\n&#x27;
+ &#x27;    &lt;meta charset=&quot;utf-8&quot;&gt;\n&#x27;
+ &#x27;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;    &lt;link &#x27;
+ &#x27;href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; &#x27;
+ &#x27;rel=&quot;stylesheet&quot;&gt;\n&#x27;
+ &#x27;    &lt;link &#x27;
+ &#x27;href=&quot;https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap&quot; &#x27;
+ &#x27;rel=&quot;stylesheet&quot;&gt;\n&#x27;
+ &#x27;    &lt;title&gt;Certificate&lt;/title&gt;\n&#x27;
+ &#x27;    &lt;style&gt;\n&#x27;
+ &#x27;      body {\n&#x27;
+ &quot;        font-family: &#x27;Tajawal&#x27;, sans-serif;\n&quot;
+ &#x27;        direction: rtl;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .certificate-container {\n&#x27;
+ &#x27;        width: 210mm;\n&#x27;
+ &#x27;        height: 297mm;\n&#x27;
+ &#x27;        border: 2px solid #000;\n&#x27;
+ &#x27;        padding: 2rem;\n&#x27;
+ &#x27;        border-radius: 15px;\n&#x27;
+ &#x27;        box-shadow: 0 0 10px rgba(0,0,0,0.1);\n&#x27;
+ &#x27;        position: relative;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section {\n&#x27;
+ &#x27;        display: flex;\n&#x27;
+ &#x27;        justify-content: space-between;\n&#x27;
+ &#x27;        align-items: center;\n&#x27;
+ &#x27;        margin-bottom: 2rem;\n&#x27;
+ &#x27;        padding-bottom: 1rem;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section img {\n&#x27;
+ &#x27;        max-width: 70px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section h2 {\n&#x27;
+ &#x27;        font-size: 2rem;\n&#x27;
+ &#x27;        margin-top: 0;\n&#x27;
+ &#x27;        margin-bottom: 0;\n&#x27;
+ &#x27;        flex-grow: 1;\n&#x27;
+ &#x27;        text-align: center;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .certificate-table td {\n&#x27;
+ &#x27;        padding: 10px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .footer-section {\n&#x27;
+ &#x27;        text-align: center;\n&#x27;
+ &#x27;        margin-top: 4rem;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      /* Force logos to stay in place even during PDF conversion */\n&#x27;
+ &#x27;      .logo {\n&#x27;
+ &#x27;        max-width: 80px;\n&#x27;
+ &#x27;        max-height: 80px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;    &lt;/style&gt;\n&#x27;
+ &#x27;  &lt;/head&gt;\n&#x27;
+ &#x27;  &lt;body&gt;\n&#x27;
+ &#x27;    &lt;div class=&quot;container mt-5 certificate-container&quot;&gt;\n&#x27;
+ &#x27;      &lt;div class=&quot;header-section&quot;&gt;\n&#x27;
+ &#x27;        &lt;!-- Left Logo --&gt;\n&#x27;
+ &#x27;        \n&#x27;
+ &#x27;        &lt;h2&gt;&lt;em&gt;شهادة تسجيل&lt;/em&gt;&lt;/h2&gt;\n&#x27;
+ &#x27;        \n&#x27;
+ &#x27;        &lt;!-- Right Logo --&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;hr class=&quot;border border-dark border-3&quot;&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;div class=&quot;row mx-3&quot;&gt;\n&#x27;
+ &#x27;        &lt;table class=&quot;table certificate-table&quot;&gt;\n&#x27;
+ &#x27;          &lt;tbody&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;الاسم الأول (بالعربية):&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;اللقب (بالعربية):&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;الاسم الكامل باللاتينية : &lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;تاريخ الميلاد:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;اسم النادي:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;رقم الهاتف:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;          &lt;/tbody&gt;\n&#x27;
+ &#x27;        &lt;/table&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;div class=&quot;footer-section&quot;&gt;\n&#x27;
+ &#x27;        &lt;p&gt;التاريخ: &lt;span class=&quot;fw-bold&quot;&gt;&lt;/span&gt;&lt;/p&gt;\n&#x27;
+ &#x27;        &lt;p&gt;التوقيع: &lt;span class=&quot;fw-bold&quot;&gt;Binh Dinh Gia&lt;/span&gt;&lt;/p&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;    &lt;/div&gt;\n&#x27;
+ &#x27;  &lt;/body&gt;\n&#x27;
+ &#x27;&lt;/html&gt;\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>request</td>
+                    <td class="code"><pre>&lt;rest_framework.request.Request: POST &#x27;/Registrations/api/generate-certificate/&#x27;&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\api.py</code>, line 75, in from_string
+          
+
+          
+            <div class="context" id="c2698647835712">
+              
+                <ol start="68" class="pre-context" id="pre2698647835712">
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    Returns: True on success</pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    &quot;&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    r = PDFKit(input, &#x27;string&#x27;, options=options, toc=toc, cover=cover, css=css,</pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>               configuration=configuration, cover_first=cover_first, verbose=verbose)</pre></li>
+                
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                
+                </ol>
+              
+              <ol start="75" class="context-line">
+                <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    return r.to_pdf(output_path)
+               ^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='76' class="post-context" id="post2698647835712">
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>def configuration(**kwargs):</pre></li>
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    &quot;&quot;&quot;</pre></li>
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre>    Constructs and returns a :class:`Configuration` with given options</pre></li>
+                  
+                  <li onclick="toggle('pre2698647835712', 'post2698647835712')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698647835712">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>configuration</td>
+                    <td class="code"><pre>&lt;pdfkit.configuration.Configuration object at 0x0000027453A49700&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cover</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>cover_first</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>css</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>input</td>
+                    <td class="code"><pre>(&#x27;&lt;!DOCTYPE html&gt;\n&#x27;
+ &#x27;&lt;html lang=&quot;ar&quot;&gt;\n&#x27;
+ &#x27;  &lt;head&gt;\n&#x27;
+ &#x27;    &lt;meta charset=&quot;utf-8&quot;&gt;\n&#x27;
+ &#x27;    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;    &lt;link &#x27;
+ &#x27;href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css&quot; &#x27;
+ &#x27;rel=&quot;stylesheet&quot;&gt;\n&#x27;
+ &#x27;    &lt;link &#x27;
+ &#x27;href=&quot;https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&amp;display=swap&quot; &#x27;
+ &#x27;rel=&quot;stylesheet&quot;&gt;\n&#x27;
+ &#x27;    &lt;title&gt;Certificate&lt;/title&gt;\n&#x27;
+ &#x27;    &lt;style&gt;\n&#x27;
+ &#x27;      body {\n&#x27;
+ &quot;        font-family: &#x27;Tajawal&#x27;, sans-serif;\n&quot;
+ &#x27;        direction: rtl;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .certificate-container {\n&#x27;
+ &#x27;        width: 210mm;\n&#x27;
+ &#x27;        height: 297mm;\n&#x27;
+ &#x27;        border: 2px solid #000;\n&#x27;
+ &#x27;        padding: 2rem;\n&#x27;
+ &#x27;        border-radius: 15px;\n&#x27;
+ &#x27;        box-shadow: 0 0 10px rgba(0,0,0,0.1);\n&#x27;
+ &#x27;        position: relative;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section {\n&#x27;
+ &#x27;        display: flex;\n&#x27;
+ &#x27;        justify-content: space-between;\n&#x27;
+ &#x27;        align-items: center;\n&#x27;
+ &#x27;        margin-bottom: 2rem;\n&#x27;
+ &#x27;        padding-bottom: 1rem;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section img {\n&#x27;
+ &#x27;        max-width: 70px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .header-section h2 {\n&#x27;
+ &#x27;        font-size: 2rem;\n&#x27;
+ &#x27;        margin-top: 0;\n&#x27;
+ &#x27;        margin-bottom: 0;\n&#x27;
+ &#x27;        flex-grow: 1;\n&#x27;
+ &#x27;        text-align: center;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .certificate-table td {\n&#x27;
+ &#x27;        padding: 10px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      .footer-section {\n&#x27;
+ &#x27;        text-align: center;\n&#x27;
+ &#x27;        margin-top: 4rem;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;      /* Force logos to stay in place even during PDF conversion */\n&#x27;
+ &#x27;      .logo {\n&#x27;
+ &#x27;        max-width: 80px;\n&#x27;
+ &#x27;        max-height: 80px;\n&#x27;
+ &#x27;      }\n&#x27;
+ &#x27;    &lt;/style&gt;\n&#x27;
+ &#x27;  &lt;/head&gt;\n&#x27;
+ &#x27;  &lt;body&gt;\n&#x27;
+ &#x27;    &lt;div class=&quot;container mt-5 certificate-container&quot;&gt;\n&#x27;
+ &#x27;      &lt;div class=&quot;header-section&quot;&gt;\n&#x27;
+ &#x27;        &lt;!-- Left Logo --&gt;\n&#x27;
+ &#x27;        \n&#x27;
+ &#x27;        &lt;h2&gt;&lt;em&gt;شهادة تسجيل&lt;/em&gt;&lt;/h2&gt;\n&#x27;
+ &#x27;        \n&#x27;
+ &#x27;        &lt;!-- Right Logo --&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;hr class=&quot;border border-dark border-3&quot;&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;div class=&quot;row mx-3&quot;&gt;\n&#x27;
+ &#x27;        &lt;table class=&quot;table certificate-table&quot;&gt;\n&#x27;
+ &#x27;          &lt;tbody&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;الاسم الأول (بالعربية):&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;اللقب (بالعربية):&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;الاسم الكامل باللاتينية : &lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;تاريخ الميلاد:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;None&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;اسم النادي:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;            &lt;tr&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;strong&gt;رقم الهاتف:&lt;/strong&gt;&lt;/td&gt;\n&#x27;
+ &#x27;              &lt;td&gt;&lt;/td&gt;\n&#x27;
+ &#x27;            &lt;/tr&gt;\n&#x27;
+ &#x27;          &lt;/tbody&gt;\n&#x27;
+ &#x27;        &lt;/table&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;\n&#x27;
+ &#x27;      &lt;div class=&quot;footer-section&quot;&gt;\n&#x27;
+ &#x27;        &lt;p&gt;التاريخ: &lt;span class=&quot;fw-bold&quot;&gt;&lt;/span&gt;&lt;/p&gt;\n&#x27;
+ &#x27;        &lt;p&gt;التوقيع: &lt;span class=&quot;fw-bold&quot;&gt;Binh Dinh Gia&lt;/span&gt;&lt;/p&gt;\n&#x27;
+ &#x27;      &lt;/div&gt;\n&#x27;
+ &#x27;    &lt;/div&gt;\n&#x27;
+ &#x27;  &lt;/body&gt;\n&#x27;
+ &#x27;&lt;/html&gt;\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>options</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>output_path</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>r</td>
+                    <td class="code"><pre>&lt;pdfkit.pdfkit.PDFKit object at 0x0000027453FE3590&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>toc</td>
+                    <td class="code"><pre>None</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>verbose</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\pdfkit.py</code>, line 201, in to_pdf
+          
+
+          
+            <div class="context" id="c2698647813824">
+              
+                <ol start="194" class="pre-context" id="pre2698647813824">
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        else:</pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>            input = None</pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        stdout, stderr = result.communicate(input=input)</pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        stderr = stderr or stdout or b&quot;&quot;</pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        stderr = stderr.decode(&#x27;utf-8&#x27;, errors=&#x27;replace&#x27;)</pre></li>
+                
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        exit_code = result.returncode</pre></li>
+                
+                </ol>
+              
+              <ol start="201" class="context-line">
+                <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        self.handle_error(exit_code, stderr)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='202' class="post-context" id="post2698647813824">
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        # Since wkhtmltopdf sends its output to stderr we will capture it</pre></li>
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        # and properly send to stdout</pre></li>
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>        if &#x27;--quiet&#x27; not in args:</pre></li>
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre>            sys.stdout.write(stderr)</pre></li>
+                  
+                  <li onclick="toggle('pre2698647813824', 'post2698647813824')"><pre></pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698647813824">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>args</td>
+                    <td class="code"><pre>[&#x27;C:\\Program Files\\wkhtmltopdf\\wkhtmltopdf.exe&#x27;, &#x27;--quiet&#x27;, &#x27;-&#x27;, &#x27;-&#x27;]</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>exit_code</td>
+                    <td class="code"><pre>1</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>input</td>
+                    <td class="code"><pre>(b&#x27;&lt;!DOCTYPE html&gt;\n&lt;html lang=&quot;ar&quot;&gt;\n  &lt;head&gt;\n    &lt;meta charset=&quot;utf-8&quot;&gt;\n   &#x27;
+ b&#x27; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;\n\n &#x27;
+ b&#x27;   &lt;link href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstr&#x27;
+ b&#x27;ap.min.css&quot; rel=&quot;stylesheet&quot;&gt;\n    &lt;link href=&quot;https://fonts.googleapis.c&#x27;
+ b&#x27;om/css2?family=Tajawal:wght@400;700&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;\n    &#x27;
+ b&#x27;&lt;title&gt;Certificate&lt;/title&gt;\n    &lt;style&gt;\n      body {\n        font-family:&#x27;
+ b&quot; &#x27;Tajawal&#x27;, sans-serif;\n        direction: rtl;\n      }\n      .certifica&quot;
+ b&#x27;te-container {\n        width: 210mm;\n        height: 297mm;\n        bord&#x27;
+ b&#x27;er: 2px solid #000;\n        padding: 2rem;\n        border-radius: 15px;\n&#x27;
+ b&#x27;        box-shadow: 0 0 10px rgba(0,0,0,0.1);\n        position: relative&#x27;
+ b&#x27;;\n      }\n      .header-section {\n        display: flex;\n        justify&#x27;
+ b&#x27;-content: space-between;\n        align-items: center;\n        margin-bot&#x27;
+ b&#x27;tom: 2rem;\n        padding-bottom: 1rem;\n      }\n      .header-section i&#x27;
+ b&#x27;mg {\n        max-width: 70px;\n      }\n      .header-section h2 {\n       &#x27;
+ b&#x27; font-size: 2rem;\n        margin-top: 0;\n        margin-bottom: 0;\n     &#x27;
+ b&#x27;   flex-grow: 1;\n        text-align: center;\n      }\n      .certificate-&#x27;
+ b&#x27;table td {\n        padding: 10px;\n      }\n      .footer-section {\n      &#x27;
+ b&#x27;  text-align: center;\n        margin-top: 4rem;\n      }\n      /* Force l&#x27;
+ b&#x27;ogos to stay in place even during PDF conversion */\n      .logo {\n      &#x27;
+ b&#x27;  max-width: 80px;\n        max-height: 80px;\n      }\n    &lt;/style&gt;\n  &lt;/he&#x27;
+ b&#x27;ad&gt;\n  &lt;body&gt;\n    &lt;div class=&quot;container mt-5 certificate-container&quot;&gt;\n    &#x27;
+ b&#x27;  &lt;div class=&quot;header-section&quot;&gt;\n        &lt;!-- Left Logo --&gt;\n        \n     &#x27;
+ b&#x27;   &lt;h2&gt;&lt;em&gt;\xd8\xb4\xd9\x87\xd8\xa7\xd8\xaf\xd8\xa9 \xd8\xaa\xd8\xb3\xd8\xac&#x27;
+ b&#x27;\xd9\x8a\xd9\x84&lt;/em&gt;&lt;/h2&gt;\n        \n        &lt;!-- Right Logo --&gt;\n      &lt;/&#x27;
+ b&#x27;div&gt;\n\n      &lt;hr class=&quot;border border-dark border-3&quot;&gt;\n\n      &lt;div class=&quot;&#x27;
+ b&#x27;row mx-3&quot;&gt;\n        &lt;table class=&quot;table certificate-table&quot;&gt;\n          &lt;tb&#x27;
+ b&#x27;ody&gt;\n            &lt;tr&gt;\n              &lt;td&gt;&lt;strong&gt;\xd8\xa7\xd9\x84&#x27;
+ b&#x27;\xd8\xa7\xd8\xb3\xd9\x85 \xd8\xa7\xd9\x84\xd8\xa3\xd9\x88\xd9\x84 (\xd8&#x27;
+ b&#x27;\xa8\xd8\xa7\xd9\x84\xd8\xb9\xd8\xb1\xd8\xa8\xd9\x8a\xd8\xa9):&lt;/strong&gt;&lt;/&#x27;
+ b&#x27;td&gt;\n              &lt;td&gt;None&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n     &#x27;
+ b&#x27;         &lt;td&gt;&lt;strong&gt;\xd8\xa7\xd9\x84\xd9\x84\xd9\x82\xd8\xa8 (\xd8\xa8\xd8&#x27;
+ b&#x27;\xa7\xd9\x84\xd8\xb9\xd8\xb1\xd8\xa8\xd9\x8a\xd8\xa9):&lt;/strong&gt;&lt;/td&gt;\n      &#x27;
+ b&#x27;        &lt;td&gt;None&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;&#x27;
+ b&#x27;td&gt;&lt;strong&gt;\xd8\xa7\xd9\x84\xd8\xa7\xd8\xb3\xd9\x85 \xd8\xa7\xd9\x84\xd9\x83&#x27;
+ b&#x27;\xd8\xa7\xd9\x85\xd9\x84 \xd8\xa8\xd8\xa7\xd9\x84\xd9\x84\xd8&#x27;
+ b&#x27;\xa7\xd8\xaa\xd9\x8a\xd9\x86\xd9\x8a\xd8\xa9 : &lt;/strong&gt;&lt;/td&gt;\n           &#x27;
+ b&#x27;   &lt;td&gt;None&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;td&gt;&lt;s&#x27;
+ b&#x27;trong&gt;\xd8\xaa\xd8\xa7\xd8\xb1\xd9\x8a\xd8\xae \xd8\xa7\xd9\x84\xd9\x85\xd9&#x27;
+ b&#x27;\x8a\xd9\x84\xd8\xa7\xd8\xaf:&lt;/strong&gt;&lt;/td&gt;\n              &lt;td&gt;None&lt;/td&gt;\n &#x27;
+ b&#x27;           &lt;/tr&gt;\n            &lt;tr&gt;\n              &lt;td&gt;&lt;strong&gt;&#x27;
+ b&#x27;\xd8\xa7\xd8\xb3\xd9\x85 \xd8\xa7\xd9\x84\xd9\x86\xd8\xa7\xd8\xaf\xd9\x8a:&#x27;
+ b&#x27;&lt;/strong&gt;&lt;/td&gt;\n              &lt;td&gt;&lt;/td&gt;\n            &lt;/tr&gt;\n            &lt;tr&#x27;
+ b&#x27;&gt;\n              &lt;td&gt;&lt;strong&gt;\xd8\xb1\xd9\x82\xd9\x85 \xd8\xa7\xd9\x84\xd9&#x27;
+ b&#x27;\x87\xd8\xa7\xd8\xaa\xd9\x81:&lt;/strong&gt;&lt;/td&gt;\n              &lt;td&gt;&lt;/td&gt;\n     &#x27;
+ b&#x27;       &lt;/tr&gt;\n          &lt;/tbody&gt;\n        &lt;/table&gt;\n      &lt;/div&gt;\n\n     &#x27;
+ b&#x27; &lt;div class=&quot;footer-section&quot;&gt;\n        &lt;p&gt;\xd8\xa7\xd9\x84\xd8\xaa\xd8&#x27;
+ b&#x27;\xa7\xd8\xb1\xd9\x8a\xd8\xae: &lt;span class=&quot;fw-bold&quot;&gt;&lt;/span&gt;&lt;/p&gt;\n        &lt;&#x27;
+ b&#x27;p&gt;\xd8\xa7\xd9\x84\xd8\xaa\xd9\x88\xd9\x82\xd9\x8a\xd8\xb9: &lt;span class=&quot;f&#x27;
+ b&#x27;w-bold&quot;&gt;Binh Dinh Gia&lt;/span&gt;&lt;/p&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  &lt;/body&gt;\n&lt;/htm&#x27;
+ b&#x27;l&gt;\n&#x27;)</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>path</td>
+                    <td class="code"><pre>False</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>result</td>
+                    <td class="code"><pre>&lt;Popen: returncode: 1 args: [&#x27;C:\\Program Files\\wkhtmltopdf\\wkhtmltopdf.ex...&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>self</td>
+                    <td class="code"><pre>&lt;pdfkit.pdfkit.PDFKit object at 0x0000027453FE3590&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>startupinfo</td>
+                    <td class="code"><pre>&lt;subprocess.STARTUPINFO object at 0x00000274540203E0&gt;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>stderr</td>
+                    <td class="code"><pre>&#x27;Exit with code 1 due to network error: HostNotFoundError\r\n&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>stdout</td>
+                    <td class="code"><pre>(b&#x27;%PDF-1.4\n1 0 obj\n&lt;&lt;\n/Title (\xfe\xff\x00C\x00e\x00r\x00t\x00i\x00f\x00i&#x27;
+ b&#x27;\x00c\x00a\x00t\x00e)\n/Creator (\xfe\xff\x00w\x00k\x00h\x00t\x00m\x00l\x00t&#x27;
+ b&#x27;\x00o\x00p\x00d\x00f\x00 \x000\x00.\x001\x002\x00.\x006)\n/Producer (\xfe&#x27;
+ b&#x27;\xff\x00Q\x00t\x00 \x004\x00.\x008\x00.\x007)\n/CreationDate (D:202409221007&#x27;
+ b&quot;57-12&#x27;00&#x27;)\n&gt;&gt;\nendobj\n3 0 obj\n&lt;&lt;\n/Type /ExtGState\n/SA true\n/SM 0.02\n/&quot;
+ b&#x27;ca 1.0\n/CA 1.0\n/AIS false\n/SMask /None&gt;&gt;\nendobj\n4 0 obj\n[/Pattern /D&#x27;
+ b&#x27;eviceRGB]\nendobj\n6 0 obj\n&lt;&lt;\n/Type /XObject\n/Subtype /Image\n/Width 90&#x27;
+ b&#x27;9\n/Height 1238\n/BitsPerComponent 8\n/ColorSpace /DeviceGray\n/Length 7 0 R&#x27;
+ b&#x27;\n/Filter /FlateDecode\n&gt;&gt;\nstream\nx\x9c\xed\xdb\xdbn\xdb\xda\x15@\xd18&#x27;
+ b&#x27;\xb6\x13_bK\xbe$M\xff\xffG\xbbIJ\x8aO[ &amp;\xe5&quot;\xf3\x14c|\x00\x01=L\xac\xb57&#x27;
+ b&#x27;\xc5O\x9f\x00\x00\x00\x00\xf8\x7fp\x01l\xf1\xbf\xe9\xf03\xb0\xc6\xc7&#x27;
+ b&#x27;\x16\xf96\xc2K`\x95\xb7U\x9e\x9f\xe2!\xc2+`\x8bc\x94\xe7\xe58\xa78wx=\xf9&#x27;
+ b&#x27;\x02\xac3\x97s=\x17yN\x8eK\x8aS\x88\xe3\x99_\x87\x1b`\x9d)\x9c%&#x27;
+ b&#x27;\xca\x11\xe4\xe6\x1c\xa7\x16\xa7\x14G\x8877\xb7\xc3\x1d\xb0\xdaHgjr\xf48&#x27;
+ b&#x27;\xe5\xb8\xad\xc6y,^\xcf%\xde\xdd\xdd\xdf\x7f\x03\xb6\xb8\xbf\xbf\xbf&#x27;
+ b&#x27;\x9b\x83\x1c9N\xc3qK\x8b\xe3\xb0x=R\x1c%~\xfb\xf6\xf0\xf0\x08l\xf1&#x27;
+ b&#x27;\xf0\xf00\x8a\xbc\x9br\x1c5^\xae\xaf\xf1\xe2b\x19\x8b\xb7w\xdf&#x27;
+ b&#x27;\xbe\x8d\xe7\xedv\xfb\xe1\tXed\xb3\xdb\xedF\x91s\x8e\xf3p\\\xbb\xa8\x8e&#x27;
+ b&#x27;\xf3\xe2\xd4\xe2\xed\x98\x8a\x8f\x8fs\x86\xcfG/\xc0\xef\x9d\x8a\x99\x93&#x27;
+ b&#x27;\xdc-9N5~^W\xe3tw3\xb7\xf8\xed\xe1q\xb7\x7fZ\n|\x05V\x9b\xc3\x1c=N9\xce5&#x27;
+ b&#x27;^\xae\xabq\xbaG\x9d[\x9cS\x9c;\xfc~\xf4\x03\xf8\xbdS1s\x91c@\x8e\x1c\xe7\x1a&#x27;
+ b&#x27;\xaf\xd6\x1d\x1b\xa7\x03\xe3\xb1\xc5\x91\xe2_\x12\xfc\x07\xf0{\x7f\xc9r&#x27;
+ b&#x27;\xca\xf1X\xe3tl\\5\x18\xaf\xbf\xdc\x8c\x1du7\xc6\xe2\x18\x8a&quot;\x84\xcd\x96&#x27;
+ b&#x27;\x1e\xe7\x1cwcS\xbdY7\x1a\xa7\xdb\x9b\xaf\xb7\xf7K\x8b\xf3T\x9c\x9e\xf9\x13&#x27;
+ b&#x27;X\xed\xd0\xe3\xc8\xf1\xe5y\xff\xf8p?\x8d\xc6\xf7\xc78\x9f\x18\xc7`|\xdc/&#x27;
+ b&#x27;-*\x11\xce1\xe7x\xa8q\x19\x8d\xef\xbe\xc2\x99\xb6\xd4e0.;\xaa\x16\xe1&#x27;
+ b&#x27;,K\x8d\xaf\xaf\xcf\xfb\xdd&lt;\x1a\xdf\xbf\xa7\x8e-\xf5\xd7`\xfc\x8f&#x27;
+ b&#x27;\x16\xff\t\xfc\xde\x7f\xab\xf1\xe5i\xff\xb8jO\x9d\xfe|3\xc58N\x8c\x87%&#x27;
+ b&#x27;U\x87\xb0\xcd\xdb\x1a\xc7\xa2z\xdcS\xdf\x1d\xe3aK\xdd?\x1d\x06\xa3\x14a\xb3&#x27;
+ b&#x27;S\x8d\xd3h|~\xdam\x89q\xdaR\xdf.\xa9\x7f\xfa7\xc1\xdf\xd3\x9bE\xf5&#x27;
+ b&#x27;\x10\xe3\xfb\x0f\x8d\xc7#\xe3\xb4\xa5\x9eb\xfc\xd3?\x08\xfe\xbe~\x9d&#x27;
+ b&#x27;\x1a_\x9e\xf7\xabnp\x0e1\xee\xde\xc6\xf8\xa7\x7f\r\xfc\x9d\x89\x11&quot;\xb6\xc6x&#x27;
+ b&#x27;|\xe5?\xbde\xd4&quot;|\x84\xe3\r\xce\xfa\x18\x97\xcb\xd4\xc3\xfd\x8d\x16\xe1lK&#x27;
+ b&#x27;\x8db\x84?\xee\x03b\xd4&quot;|\x88\xa5\xc6\xd7\x97\xa7\xc7\x15\x1fn\x88\x11&gt;\x9e&#x27;
+ b&#x27;\x18!B\x8c\x10!F\x88\xd8\x12\xe3\xe9\xcb\xe2\xe95\xa3\x16\xe1c\x88\x11&quot;\xc4&#x27;
+ b&#x27;\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08&#x27;
+ b&#x27;\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081&#x27;
+ b&#x27;B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B&#x27;
+ b&#x27;\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88&#x27;
+ b&#x27;\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&#x27;
+ b&#x27;&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b&#x27;
+ b&#x27;\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84&#x27;
+ b&#x27;\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10&#x27;
+ b&#x27;!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#&#x27;
+ b&#x27;D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4&#x27;
+ b&#x27;\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08&#x27;
+ b&#x27;\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081&#x27;
+ b&#x27;B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B&#x27;
+ b&#x27;\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88&#x27;
+ b&#x27;\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&#x27;
+ b&#x27;&quot;\xc4\x08\x11b\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b&#x27;
+ b&#x27;\x84\x081B\x84\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x84&#x27;
+ b&#x27;\x18!B\x8c\x10!F\x88\x10#D\x88\x11&quot;\xc4\x08\x11b\x84\x081B\x… &lt;trimmed 89506 bytes string&gt;</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+        
+        <li class="frame user">
+          
+            <code class="fname">C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\pdfkit.py</code>, line 155, in handle_error
+          
+
+          
+            <div class="context" id="c2698650759488">
+              
+                <ol start="148" class="pre-context" id="pre2698650759488">
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>        if &#x27;cannot connect to X server&#x27; in stderr:</pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>            raise IOError(&#x27;%s\n&#x27;</pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>                          &#x27;You will need to run wkhtmltopdf within a &quot;virtual&quot; X server.\n&#x27;</pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>                          &#x27;Go to the link below for more information\n&#x27;</pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>                          &#x27;https://github.com/JazzCore/python-pdfkit/wiki/Using-wkhtmltopdf-without-X-server&#x27; % stderr)</pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre></pre></li>
+                
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>        if &#x27;Error&#x27; in stderr:</pre></li>
+                
+                </ol>
+              
+              <ol start="155" class="context-line">
+                <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>            raise IOError(&#x27;wkhtmltopdf reported an error:\n&#x27; + stderr)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^</pre> <span>…</span></li>
+              </ol>
+              
+                <ol start='156' class="post-context" id="post2698650759488">
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>        error_msg = stderr or &#x27;Unknown Error&#x27;</pre></li>
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>        raise IOError(&quot;wkhtmltopdf exited with non-zero code {0}. error:\n{1}&quot;.format(exit_code, error_msg))</pre></li>
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre></pre></li>
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>    def to_pdf(self, path=None):</pre></li>
+                  
+                  <li onclick="toggle('pre2698650759488', 'post2698650759488')"><pre>        args = self.command(path)</pre></li>
+                  
+              </ol>
+              
+            </div>
+          
+
+          
+            
+              <details>
+                <summary class="commands">Local vars</summary>
+            
+            <table class="vars" id="v2698650759488">
+              <thead>
+                <tr>
+                  <th scope="col">Variable</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+                  <tr>
+                    <td>exit_code</td>
+                    <td class="code"><pre>1</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>stderr</td>
+                    <td class="code"><pre>&#x27;Exit with code 1 due to network error: HostNotFoundError\r\n&#x27;</pre></td>
+                  </tr>
+                
+                  <tr>
+                    <td>stderr_lines</td>
+                    <td class="code"><pre>[&#x27;Exit with code 1 due to network error: HostNotFoundError&#x27;]</pre></td>
+                  </tr>
+                
+              </tbody>
+            </table>
+            </details>
+          
+        </li>
+      
+    </ul>
+  </div>
+
+  <form action="https://dpaste.com/" name="pasteform" id="pasteform" method="post">
+  <div id="pastebinTraceback" class="pastebin">
+    <input type="hidden" name="language" value="PythonConsole">
+    <input type="hidden" name="title"
+      value="OSError at /Registrations/api/generate-certificate/">
+    <input type="hidden" name="source" value="Django Dpaste Agent">
+    <input type="hidden" name="poster" value="Django">
+    <textarea name="content" id="traceback_area" cols="140" rows="25">
+Environment:
+
+
+Request Method: POST
+Request URL: http://127.0.0.1:8000/Registrations/api/generate-certificate/
+
+Django Version: 5.1
+Python Version: 3.12.5
+Installed Applications:
+[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;Registrations&#x27;,
+ &#x27;rest_framework_simplejwt&#x27;,
+ &#x27;rest_framework_simplejwt.token_blacklist&#x27;]
+Installed Middleware:
+[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;,
+ &#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]
+
+
+
+Traceback (most recent call last):
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+    ^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\BDG\Registrations\views.py", line 63, in generate_certificate_pdf
+    pdf = pdfkit.from_string(html_content, False, configuration=config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\api.py", line 75, in from_string
+    return r.to_pdf(output_path)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\pdfkit.py", line 201, in to_pdf
+    self.handle_error(exit_code, stderr)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ADAM&#x27;S ProTek\Desktop\Repositories\Backend\Lib\site-packages\pdfkit\pdfkit.py", line 155, in handle_error
+    raise IOError(&#x27;wkhtmltopdf reported an error:\n&#x27; + stderr)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Exception Type: OSError at /Registrations/api/generate-certificate/
+Exception Value: wkhtmltopdf reported an error:
+Exit with code 1 due to network error: HostNotFoundError
+
+</textarea>
+  <br><br>
+  <input type="submit" value="Share this traceback on a public website">
+  </div>
+</form>
+
+</div>
+
+
+<div id="requestinfo">
+  <h2>Request information</h2>
+
+
+  
+    <h3 id="user-info">USER</h3>
+    <p>AnonymousUser</p>
+  
+
+  <h3 id="get-info">GET</h3>
+  
+    <p>No GET data</p>
+  
+
+  <h3 id="post-info">POST</h3>
+  
+    <p>No POST data</p>
+  
+
+  <h3 id="files-info">FILES</h3>
+  
+    <p>No FILES data</p>
+  
+
+  <h3 id="cookie-info">COOKIES</h3>
+  
+    <p>No cookie data</p>
+  
+
+  <h3 id="meta-info">META</h3>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Variable</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ALLUSERSPROFILE</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPDATA</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek\\AppData\\Roaming&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CHROME_CRASHPAD_PIPE_NAME</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\crashpad_12556_SNDCBRJEPFMEFLEB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COLORTERM</td>
+          <td class="code"><pre>&#x27;truecolor&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMMONPROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files\\Common Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMPUTERNAME</td>
+          <td class="code"><pre>&#x27;DESKTOP-9GDR5PB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>COMSPEC</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\system32\\cmd.exe&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_LENGTH</td>
+          <td class="code"><pre>&#x27;2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CONTENT_TYPE</td>
+          <td class="code"><pre>&#x27;application/json&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DJANGO_SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;BDG.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DRIVERDATA</td>
+          <td class="code"><pre>&#x27;C:\\Windows\\System32\\Drivers\\DriverData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_APP_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Internet Explorer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FPS_BROWSER_USER_PROFILE_STRING</td>
+          <td class="code"><pre>&#x27;Default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GATEWAY_INTERFACE</td>
+          <td class="code"><pre>&#x27;CGI/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>GIT_ASKPASS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HOMEPATH</td>
+          <td class="code"><pre>&quot;\\Users\\ADAM&#x27;S ProTek&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT</td>
+          <td class="code"><pre>&#x27;*/*&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT_ENCODING</td>
+          <td class="code"><pre>&#x27;gzip, deflate, br, zstd&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ACCEPT_LANGUAGE</td>
+          <td class="code"><pre>&#x27;en-US,en;q=0.9&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_CONNECTION</td>
+          <td class="code"><pre>&#x27;keep-alive&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_HOST</td>
+          <td class="code"><pre>&#x27;127.0.0.1:8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_ORIGIN</td>
+          <td class="code"><pre>&#x27;http://127.0.0.1:5500&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_REFERER</td>
+          <td class="code"><pre>&#x27;http://127.0.0.1:5500/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_CH_UA</td>
+          <td class="code"><pre>&#x27;&quot;Not/A)Brand&quot;;v=&quot;8&quot;, &quot;Chromium&quot;;v=&quot;126&quot;, &quot;Opera&quot;;v=&quot;112&quot;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_CH_UA_MOBILE</td>
+          <td class="code"><pre>&#x27;?0&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_CH_UA_PLATFORM</td>
+          <td class="code"><pre>&#x27;&quot;Windows&quot;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_FETCH_DEST</td>
+          <td class="code"><pre>&#x27;empty&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_FETCH_MODE</td>
+          <td class="code"><pre>&#x27;cors&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_SEC_FETCH_SITE</td>
+          <td class="code"><pre>&#x27;same-site&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>HTTP_USER_AGENT</td>
+          <td class="code"><pre>(&#x27;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like &#x27;
+ &#x27;Gecko) Chrome/126.0.0.0 Safari/537.36 OPR/112.0.0.0&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANG</td>
+          <td class="code"><pre>&#x27;en_US.UTF-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALAPPDATA</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek\\AppData\\Local&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGONSERVER</td>
+          <td class="code"><pre>&#x27;\\\\DESKTOP-9GDR5PB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_OF_PROCESSORS</td>
+          <td class="code"><pre>&#x27;4&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ONEDRIVE</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek\\OneDrive&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ORIGINAL_XDG_CURRENT_DESKTOP</td>
+          <td class="code"><pre>&#x27;undefined&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>OS</td>
+          <td class="code"><pre>&#x27;Windows_NT&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH</td>
+          <td class="code"><pre>(&quot;C:\\Users\\ADAM&#x27;S &quot;
+ &#x27;ProTek\\Desktop\\Repositories\\Backend\\Scripts;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program &#x27;
+ &quot;Files\\Git\\cmd;C:\\Users\\ADAM&#x27;S &quot;
+ &quot;ProTek\\AppData\\Local\\Programs\\Python\\Python312\\Scripts\\;C:\\Users\\ADAM&#x27;S &quot;
+ &quot;ProTek\\AppData\\Local\\Programs\\Python\\Python312\\;C:\\Users\\ADAM&#x27;S &quot;
+ &quot;ProTek\\AppData\\Local\\Programs\\Python\\Launcher\\;C:\\Users\\ADAM&#x27;S &quot;
+ &quot;ProTek\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\ADAM&#x27;S &quot;
+ &#x27;ProTek\\AppData\\Local\\Programs\\Microsoft VS Code\\bin&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATHEXT</td>
+          <td class="code"><pre>&#x27;.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PATH_INFO</td>
+          <td class="code"><pre>&#x27;/Registrations/api/generate-certificate/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_ARCHITECTURE</td>
+          <td class="code"><pre>&#x27;AMD64&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_IDENTIFIER</td>
+          <td class="code"><pre>&#x27;Intel64 Family 6 Model 78 Stepping 3, GenuineIntel&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_LEVEL</td>
+          <td class="code"><pre>&#x27;6&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROCESSOR_REVISION</td>
+          <td class="code"><pre>&#x27;4e03&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMDATA</td>
+          <td class="code"><pre>&#x27;C:\\ProgramData&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMFILES(X86)</td>
+          <td class="code"><pre>&#x27;C:\\Program Files (x86)&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROGRAMW6432</td>
+          <td class="code"><pre>&#x27;C:\\Program Files&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PROMPT</td>
+          <td class="code"><pre>&#x27;(Backend) $P$G&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PSMODULEPATH</td>
+          <td class="code"><pre>(&quot;C:\\Users\\ADAM&#x27;S ProTek\\Documents\\WindowsPowerShell\\Modules;C:\\Program &quot;
+ &#x27;Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PUBLIC</td>
+          <td class="code"><pre>&#x27;C:\\Users\\Public&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONIOENCODING</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PYTHONUNBUFFERED</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>QUERY_STRING</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_ADDR</td>
+          <td class="code"><pre>&#x27;127.0.0.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REMOTE_HOST</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REQUEST_METHOD</td>
+          <td class="code"><pre>&#x27;POST&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>RUN_MAIN</td>
+          <td class="code"><pre>&#x27;true&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SCRIPT_NAME</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_NAME</td>
+          <td class="code"><pre>&#x27;DESKTOP-9GDR5PB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PORT</td>
+          <td class="code"><pre>&#x27;8000&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_PROTOCOL</td>
+          <td class="code"><pre>&#x27;HTTP/1.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_SOFTWARE</td>
+          <td class="code"><pre>&#x27;WSGIServer/0.2&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSIONNAME</td>
+          <td class="code"><pre>&#x27;Console&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMDRIVE</td>
+          <td class="code"><pre>&#x27;C:&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SYSTEMROOT</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMP</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S~1\\AppData\\Local\\Temp&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM</td>
+          <td class="code"><pre>&#x27;vscode&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TERM_PROGRAM_VERSION</td>
+          <td class="code"><pre>&#x27;1.93.1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TMP</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S~1\\AppData\\Local\\Temp&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN</td>
+          <td class="code"><pre>&#x27;DESKTOP-9GDR5PB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERDOMAIN_ROAMINGPROFILE</td>
+          <td class="code"><pre>&#x27;DESKTOP-9GDR5PB&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERNAME</td>
+          <td class="code"><pre>&quot;ADAM&#x27;S ProTek&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USERPROFILE</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VIRTUAL_ENV</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VIRTUAL_ENV_PROMPT</td>
+          <td class="code"><pre>&#x27;(Backend) &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_ENV_PREPEND</td>
+          <td class="code"><pre>&quot;PATH=C\\x3a\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend\\Scripts;&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_ENV_REPLACE</td>
+          <td class="code"><pre>(&#x27;PROMPT=(Backend) &#x27;
+ &quot;$P$G:PYTHONIOENCODING=utf-8:PYTHONUNBUFFERED=1:VIRTUAL_ENV=C\\x3a\\Users\\ADAM&#x27;S &quot;
+ &#x27;ProTek\\Desktop\\Repositories\\Backend:VIRTUAL_ENV_PROMPT=(Backend) &#x27;
+ &#x27;:_OLD_VIRTUAL_PROMPT=$P$G&#x27;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_EXTRA_ARGS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_MAIN</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_ASKPASS_NODE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_GIT_IPC_HANDLE</td>
+          <td class="code"><pre>&#x27;\\\\.\\pipe\\vscode-git-2b5b2f9935-sock&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_INJECTION</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_NONCE</td>
+          <td class="code"><pre>&#x27;56a75bd6-7a67-4046-aa11-ab92324e1e5c&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>VSCODE_STABLE</td>
+          <td class="code"><pre>&#x27;1&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WINDIR</td>
+          <td class="code"><pre>&#x27;C:\\Windows&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>_OLD_VIRTUAL_PROMPT</td>
+          <td class="code"><pre>&#x27;$P$G&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.errors</td>
+          <td class="code"><pre>&lt;_io.TextIOWrapper name=&#x27;&lt;stderr&gt;&#x27; mode=&#x27;w&#x27; encoding=&#x27;utf-8&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.file_wrapper</td>
+          <td class="code"><pre>&lt;class &#x27;wsgiref.util.FileWrapper&#x27;&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.input</td>
+          <td class="code"><pre>&lt;django.core.handlers.wsgi.LimitedStream object at 0x0000027453D40FA0&gt;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multiprocess</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.multithread</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.run_once</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.url_scheme</td>
+          <td class="code"><pre>&#x27;http&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>wsgi.version</td>
+          <td class="code"><pre>(1, 0)</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+  <h3 id="settings-info">Settings</h3>
+  <h4>Using settings module <code>BDG.settings</code></h4>
+  <table class="req">
+    <thead>
+      <tr>
+        <th scope="col">Setting</th>
+        <th scope="col">Value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr>
+          <td>ABSOLUTE_URL_OVERRIDES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ADMINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ALLOWED_HOSTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>APPEND_SLASH</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTHENTICATION_BACKENDS</td>
+          <td class="code"><pre>[&#x27;django.contrib.auth.backends.ModelBackend&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_PASSWORD_VALIDATORS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>AUTH_USER_MODEL</td>
+          <td class="code"><pre>&#x27;auth.User&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>BASE_DIR</td>
+          <td class="code"><pre>WindowsPath(&quot;C:/Users/ADAM&#x27;S ProTek/Desktop/Repositories/Backend/BDG&quot;)</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.cache.backends.locmem.LocMemCache&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_KEY_PREFIX</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CACHE_MIDDLEWARE_SECONDS</td>
+          <td class="code"><pre>600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CORS_ALLOW_ALL_ORIGINS</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_AGE</td>
+          <td class="code"><pre>31449600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;csrftoken&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_FAILURE_VIEW</td>
+          <td class="code"><pre>&#x27;django.views.csrf.csrf_failure&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_HEADER_NAME</td>
+          <td class="code"><pre>&#x27;HTTP_X_CSRFTOKEN&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_TRUSTED_ORIGINS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>CSRF_USE_SESSIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;ATOMIC_REQUESTS&#x27;: False,
+             &#x27;AUTOCOMMIT&#x27;: True,
+             &#x27;CONN_HEALTH_CHECKS&#x27;: False,
+             &#x27;CONN_MAX_AGE&#x27;: 0,
+             &#x27;ENGINE&#x27;: &#x27;django.db.backends.sqlite3&#x27;,
+             &#x27;HOST&#x27;: &#x27;&#x27;,
+             &#x27;NAME&#x27;: WindowsPath(&quot;C:/Users/ADAM&#x27;S ProTek/Desktop/Repositories/Backend/BDG/db.sqlite3&quot;),
+             &#x27;OPTIONS&#x27;: {},
+             &#x27;PASSWORD&#x27;: &#x27;********************&#x27;,
+             &#x27;PORT&#x27;: &#x27;&#x27;,
+             &#x27;TEST&#x27;: {&#x27;CHARSET&#x27;: None,
+                      &#x27;COLLATION&#x27;: None,
+                      &#x27;MIGRATE&#x27;: True,
+                      &#x27;MIRROR&#x27;: None,
+                      &#x27;NAME&#x27;: None},
+             &#x27;TIME_ZONE&#x27;: None,
+             &#x27;USER&#x27;: &#x27;&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATABASE_ROUTERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FIELDS</td>
+          <td class="code"><pre>1000</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATA_UPLOAD_MAX_NUMBER_FILES</td>
+          <td class="code"><pre>100</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y, P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATETIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d %H:%M:%S&#x27;,
+ &#x27;%Y-%m-%d %H:%M:%S.%f&#x27;,
+ &#x27;%Y-%m-%d %H:%M&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%Y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%Y %H:%M&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S&#x27;,
+ &#x27;%m/%d/%y %H:%M:%S.%f&#x27;,
+ &#x27;%m/%d/%y %H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;N j, Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DATE_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%Y-%m-%d&#x27;,
+ &#x27;%m/%d/%Y&#x27;,
+ &#x27;%m/%d/%y&#x27;,
+ &#x27;%b %d %Y&#x27;,
+ &#x27;%b %d, %Y&#x27;,
+ &#x27;%d %b %Y&#x27;,
+ &#x27;%d %b, %Y&#x27;,
+ &#x27;%B %d %Y&#x27;,
+ &#x27;%B %d, %Y&#x27;,
+ &#x27;%d %B %Y&#x27;,
+ &#x27;%d %B, %Y&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEBUG_PROPAGATE_EXCEPTIONS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DECIMAL_SEPARATOR</td>
+          <td class="code"><pre>&#x27;.&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_AUTO_FIELD</td>
+          <td class="code"><pre>&#x27;django.db.models.BigAutoField&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_CHARSET</td>
+          <td class="code"><pre>&#x27;utf-8&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.ExceptionReporter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_EXCEPTION_REPORTER_FILTER</td>
+          <td class="code"><pre>&#x27;django.views.debug.SafeExceptionReporterFilter&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_FROM_EMAIL</td>
+          <td class="code"><pre>&#x27;webmaster@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_INDEX_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DEFAULT_TABLESPACE</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>DISALLOWED_USER_AGENTS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.mail.backends.smtp.EmailBackend&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST</td>
+          <td class="code"><pre>&#x27;localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_PASSWORD</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_HOST_USER</td>
+          <td class="code"><pre>&#x27;&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_PORT</td>
+          <td class="code"><pre>25</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_CERTFILE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SSL_KEYFILE</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_SUBJECT_PREFIX</td>
+          <td class="code"><pre>&#x27;[Django] &#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_TIMEOUT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_LOCALTIME</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_SSL</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>EMAIL_USE_TLS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_DIRECTORY_PERMISSIONS</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_HANDLERS</td>
+          <td class="code"><pre>[&#x27;django.core.files.uploadhandler.MemoryFileUploadHandler&#x27;,
+ &#x27;django.core.files.uploadhandler.TemporaryFileUploadHandler&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_MAX_MEMORY_SIZE</td>
+          <td class="code"><pre>2621440</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_PERMISSIONS</td>
+          <td class="code"><pre>420</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FILE_UPLOAD_TEMP_DIR</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIRST_DAY_OF_WEEK</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FIXTURE_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORCE_SCRIPT_NAME</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMAT_MODULE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORMS_URLFIELD_ASSUME_HTTPS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>FORM_RENDERER</td>
+          <td class="code"><pre>&#x27;django.forms.renderers.DjangoTemplates&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>IGNORABLE_404_URLS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INSTALLED_APPS</td>
+          <td class="code"><pre>[&#x27;django.contrib.admin&#x27;,
+ &#x27;django.contrib.auth&#x27;,
+ &#x27;django.contrib.contenttypes&#x27;,
+ &#x27;django.contrib.sessions&#x27;,
+ &#x27;django.contrib.messages&#x27;,
+ &#x27;django.contrib.staticfiles&#x27;,
+ &#x27;rest_framework&#x27;,
+ &#x27;corsheaders&#x27;,
+ &#x27;Registrations&#x27;,
+ &#x27;rest_framework_simplejwt&#x27;,
+ &#x27;rest_framework_simplejwt.token_blacklist&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>INTERNAL_IPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES</td>
+          <td class="code"><pre>[(&#x27;af&#x27;, &#x27;Afrikaans&#x27;),
+ (&#x27;ar&#x27;, &#x27;Arabic&#x27;),
+ (&#x27;ar-dz&#x27;, &#x27;Algerian Arabic&#x27;),
+ (&#x27;ast&#x27;, &#x27;Asturian&#x27;),
+ (&#x27;az&#x27;, &#x27;Azerbaijani&#x27;),
+ (&#x27;bg&#x27;, &#x27;Bulgarian&#x27;),
+ (&#x27;be&#x27;, &#x27;Belarusian&#x27;),
+ (&#x27;bn&#x27;, &#x27;Bengali&#x27;),
+ (&#x27;br&#x27;, &#x27;Breton&#x27;),
+ (&#x27;bs&#x27;, &#x27;Bosnian&#x27;),
+ (&#x27;ca&#x27;, &#x27;Catalan&#x27;),
+ (&#x27;ckb&#x27;, &#x27;Central Kurdish (Sorani)&#x27;),
+ (&#x27;cs&#x27;, &#x27;Czech&#x27;),
+ (&#x27;cy&#x27;, &#x27;Welsh&#x27;),
+ (&#x27;da&#x27;, &#x27;Danish&#x27;),
+ (&#x27;de&#x27;, &#x27;German&#x27;),
+ (&#x27;dsb&#x27;, &#x27;Lower Sorbian&#x27;),
+ (&#x27;el&#x27;, &#x27;Greek&#x27;),
+ (&#x27;en&#x27;, &#x27;English&#x27;),
+ (&#x27;en-au&#x27;, &#x27;Australian English&#x27;),
+ (&#x27;en-gb&#x27;, &#x27;British English&#x27;),
+ (&#x27;eo&#x27;, &#x27;Esperanto&#x27;),
+ (&#x27;es&#x27;, &#x27;Spanish&#x27;),
+ (&#x27;es-ar&#x27;, &#x27;Argentinian Spanish&#x27;),
+ (&#x27;es-co&#x27;, &#x27;Colombian Spanish&#x27;),
+ (&#x27;es-mx&#x27;, &#x27;Mexican Spanish&#x27;),
+ (&#x27;es-ni&#x27;, &#x27;Nicaraguan Spanish&#x27;),
+ (&#x27;es-ve&#x27;, &#x27;Venezuelan Spanish&#x27;),
+ (&#x27;et&#x27;, &#x27;Estonian&#x27;),
+ (&#x27;eu&#x27;, &#x27;Basque&#x27;),
+ (&#x27;fa&#x27;, &#x27;Persian&#x27;),
+ (&#x27;fi&#x27;, &#x27;Finnish&#x27;),
+ (&#x27;fr&#x27;, &#x27;French&#x27;),
+ (&#x27;fy&#x27;, &#x27;Frisian&#x27;),
+ (&#x27;ga&#x27;, &#x27;Irish&#x27;),
+ (&#x27;gd&#x27;, &#x27;Scottish Gaelic&#x27;),
+ (&#x27;gl&#x27;, &#x27;Galician&#x27;),
+ (&#x27;he&#x27;, &#x27;Hebrew&#x27;),
+ (&#x27;hi&#x27;, &#x27;Hindi&#x27;),
+ (&#x27;hr&#x27;, &#x27;Croatian&#x27;),
+ (&#x27;hsb&#x27;, &#x27;Upper Sorbian&#x27;),
+ (&#x27;hu&#x27;, &#x27;Hungarian&#x27;),
+ (&#x27;hy&#x27;, &#x27;Armenian&#x27;),
+ (&#x27;ia&#x27;, &#x27;Interlingua&#x27;),
+ (&#x27;id&#x27;, &#x27;Indonesian&#x27;),
+ (&#x27;ig&#x27;, &#x27;Igbo&#x27;),
+ (&#x27;io&#x27;, &#x27;Ido&#x27;),
+ (&#x27;is&#x27;, &#x27;Icelandic&#x27;),
+ (&#x27;it&#x27;, &#x27;Italian&#x27;),
+ (&#x27;ja&#x27;, &#x27;Japanese&#x27;),
+ (&#x27;ka&#x27;, &#x27;Georgian&#x27;),
+ (&#x27;kab&#x27;, &#x27;Kabyle&#x27;),
+ (&#x27;kk&#x27;, &#x27;Kazakh&#x27;),
+ (&#x27;km&#x27;, &#x27;Khmer&#x27;),
+ (&#x27;kn&#x27;, &#x27;Kannada&#x27;),
+ (&#x27;ko&#x27;, &#x27;Korean&#x27;),
+ (&#x27;ky&#x27;, &#x27;Kyrgyz&#x27;),
+ (&#x27;lb&#x27;, &#x27;Luxembourgish&#x27;),
+ (&#x27;lt&#x27;, &#x27;Lithuanian&#x27;),
+ (&#x27;lv&#x27;, &#x27;Latvian&#x27;),
+ (&#x27;mk&#x27;, &#x27;Macedonian&#x27;),
+ (&#x27;ml&#x27;, &#x27;Malayalam&#x27;),
+ (&#x27;mn&#x27;, &#x27;Mongolian&#x27;),
+ (&#x27;mr&#x27;, &#x27;Marathi&#x27;),
+ (&#x27;ms&#x27;, &#x27;Malay&#x27;),
+ (&#x27;my&#x27;, &#x27;Burmese&#x27;),
+ (&#x27;nb&#x27;, &#x27;Norwegian Bokmål&#x27;),
+ (&#x27;ne&#x27;, &#x27;Nepali&#x27;),
+ (&#x27;nl&#x27;, &#x27;Dutch&#x27;),
+ (&#x27;nn&#x27;, &#x27;Norwegian Nynorsk&#x27;),
+ (&#x27;os&#x27;, &#x27;Ossetic&#x27;),
+ (&#x27;pa&#x27;, &#x27;Punjabi&#x27;),
+ (&#x27;pl&#x27;, &#x27;Polish&#x27;),
+ (&#x27;pt&#x27;, &#x27;Portuguese&#x27;),
+ (&#x27;pt-br&#x27;, &#x27;Brazilian Portuguese&#x27;),
+ (&#x27;ro&#x27;, &#x27;Romanian&#x27;),
+ (&#x27;ru&#x27;, &#x27;Russian&#x27;),
+ (&#x27;sk&#x27;, &#x27;Slovak&#x27;),
+ (&#x27;sl&#x27;, &#x27;Slovenian&#x27;),
+ (&#x27;sq&#x27;, &#x27;Albanian&#x27;),
+ (&#x27;sr&#x27;, &#x27;Serbian&#x27;),
+ (&#x27;sr-latn&#x27;, &#x27;Serbian Latin&#x27;),
+ (&#x27;sv&#x27;, &#x27;Swedish&#x27;),
+ (&#x27;sw&#x27;, &#x27;Swahili&#x27;),
+ (&#x27;ta&#x27;, &#x27;Tamil&#x27;),
+ (&#x27;te&#x27;, &#x27;Telugu&#x27;),
+ (&#x27;tg&#x27;, &#x27;Tajik&#x27;),
+ (&#x27;th&#x27;, &#x27;Thai&#x27;),
+ (&#x27;tk&#x27;, &#x27;Turkmen&#x27;),
+ (&#x27;tr&#x27;, &#x27;Turkish&#x27;),
+ (&#x27;tt&#x27;, &#x27;Tatar&#x27;),
+ (&#x27;udm&#x27;, &#x27;Udmurt&#x27;),
+ (&#x27;ug&#x27;, &#x27;Uyghur&#x27;),
+ (&#x27;uk&#x27;, &#x27;Ukrainian&#x27;),
+ (&#x27;ur&#x27;, &#x27;Urdu&#x27;),
+ (&#x27;uz&#x27;, &#x27;Uzbek&#x27;),
+ (&#x27;vi&#x27;, &#x27;Vietnamese&#x27;),
+ (&#x27;zh-hans&#x27;, &#x27;Simplified Chinese&#x27;),
+ (&#x27;zh-hant&#x27;, &#x27;Traditional Chinese&#x27;)]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGES_BIDI</td>
+          <td class="code"><pre>[&#x27;he&#x27;, &#x27;ar&#x27;, &#x27;ar-dz&#x27;, &#x27;ckb&#x27;, &#x27;fa&#x27;, &#x27;ug&#x27;, &#x27;ur&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_CODE</td>
+          <td class="code"><pre>&#x27;en-us&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_AGE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;django_language&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SAMESITE</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LANGUAGE_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOCALE_PATHS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGGING_CONFIG</td>
+          <td class="code"><pre>&#x27;logging.config.dictConfig&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_REDIRECT_URL</td>
+          <td class="code"><pre>&#x27;/accounts/profile/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGIN_URL</td>
+          <td class="code"><pre>&#x27;/accounts/login/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>LOGOUT_REDIRECT_URL</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MANAGERS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_ROOT</td>
+          <td class="code"><pre>&quot;C:\\Users\\ADAM&#x27;S ProTek\\Desktop\\Repositories\\Backend\\BDG\\upload/&quot;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MEDIA_URL</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MESSAGE_STORAGE</td>
+          <td class="code"><pre>&#x27;django.contrib.messages.storage.fallback.FallbackStorage&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIDDLEWARE</td>
+          <td class="code"><pre>[&#x27;django.middleware.security.SecurityMiddleware&#x27;,
+ &#x27;django.contrib.sessions.middleware.SessionMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;,
+ &#x27;django.middleware.csrf.CsrfViewMiddleware&#x27;,
+ &#x27;django.contrib.auth.middleware.AuthenticationMiddleware&#x27;,
+ &#x27;django.contrib.messages.middleware.MessageMiddleware&#x27;,
+ &#x27;django.middleware.clickjacking.XFrameOptionsMiddleware&#x27;,
+ &#x27;corsheaders.middleware.CorsMiddleware&#x27;,
+ &#x27;django.middleware.common.CommonMiddleware&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MIGRATION_MODULES</td>
+          <td class="code"><pre>{}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>MONTH_DAY_FORMAT</td>
+          <td class="code"><pre>&#x27;F j&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>NUMBER_GROUPING</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_HASHERS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PASSWORD_RESET_TIMEOUT</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>PREPEND_WWW</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>REST_FRAMEWORK</td>
+          <td class="code"><pre>{&#x27;DEFAULT_AUTHENTICATION_CLASSES&#x27;: (&#x27;rest_framework_simplejwt.authentication.JWTAuthentication&#x27;,)}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>ROOT_URLCONF</td>
+          <td class="code"><pre>&#x27;BDG.urls&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECRET_KEY_FALLBACKS</td>
+          <td class="code"><pre>&#x27;********************&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CONTENT_TYPE_NOSNIFF</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_CROSS_ORIGIN_OPENER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_INCLUDE_SUBDOMAINS</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_PRELOAD</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_HSTS_SECONDS</td>
+          <td class="code"><pre>0</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_PROXY_SSL_HEADER</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REDIRECT_EXEMPT</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_REFERRER_POLICY</td>
+          <td class="code"><pre>&#x27;same-origin&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_HOST</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SECURE_SSL_REDIRECT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SERVER_EMAIL</td>
+          <td class="code"><pre>&#x27;root@localhost&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_CACHE_ALIAS</td>
+          <td class="code"><pre>&#x27;default&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_AGE</td>
+          <td class="code"><pre>1209600</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_DOMAIN</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_HTTPONLY</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_NAME</td>
+          <td class="code"><pre>&#x27;sessionid&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_PATH</td>
+          <td class="code"><pre>&#x27;/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SAMESITE</td>
+          <td class="code"><pre>&#x27;Lax&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_COOKIE_SECURE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_ENGINE</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.backends.db&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_EXPIRE_AT_BROWSER_CLOSE</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_FILE_PATH</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SAVE_EVERY_REQUEST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SESSION_SERIALIZER</td>
+          <td class="code"><pre>&#x27;django.contrib.sessions.serializers.JSONSerializer&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SETTINGS_MODULE</td>
+          <td class="code"><pre>&#x27;BDG.settings&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATETIME_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SHORT_DATE_FORMAT</td>
+          <td class="code"><pre>&#x27;m/d/Y&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIGNING_BACKEND</td>
+          <td class="code"><pre>&#x27;django.core.signing.TimestampSigner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SILENCED_SYSTEM_CHECKS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>SIMPLE_JWT</td>
+          <td class="code"><pre>{&#x27;ACCESS_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;ALGORITHM&#x27;: &#x27;HS256&#x27;,
+ &#x27;AUDIENCE&#x27;: None,
+ &#x27;AUTH_HEADER_NAME&#x27;: &#x27;HTTP_AUTHORIZATION&#x27;,
+ &#x27;AUTH_HEADER_TYPES&#x27;: (&#x27;Bearer&#x27;,),
+ &#x27;AUTH_TOKEN_CLASSES&#x27;: &#x27;********************&#x27;,
+ &#x27;BLACKLIST_AFTER_ROTATION&#x27;: True,
+ &#x27;ISSUER&#x27;: None,
+ &#x27;JSON_ENCODER&#x27;: None,
+ &#x27;JTI_CLAIM&#x27;: &#x27;jti&#x27;,
+ &#x27;JWK_URL&#x27;: None,
+ &#x27;LEEWAY&#x27;: 0,
+ &#x27;REFRESH_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;ROTATE_REFRESH_TOKENS&#x27;: &#x27;********************&#x27;,
+ &#x27;SLIDING_TOKEN_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;SLIDING_TOKEN_OBTAIN_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;SLIDING_TOKEN_REFRESH_EXP_CLAIM&#x27;: &#x27;********************&#x27;,
+ &#x27;SLIDING_TOKEN_REFRESH_LIFETIME&#x27;: &#x27;********************&#x27;,
+ &#x27;SLIDING_TOKEN_REFRESH_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_BLACKLIST_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_OBTAIN_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_REFRESH_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_TYPE_CLAIM&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_USER_CLASS&#x27;: &#x27;********************&#x27;,
+ &#x27;TOKEN_VERIFY_SERIALIZER&#x27;: &#x27;********************&#x27;,
+ &#x27;UPDATE_LAST_LOGIN&#x27;: False,
+ &#x27;USER_AUTHENTICATION_RULE&#x27;: &#x27;rest_framework_simplejwt.authentication.default_user_authentication_rule&#x27;,
+ &#x27;USER_ID_CLAIM&#x27;: &#x27;user_id&#x27;,
+ &#x27;USER_ID_FIELD&#x27;: &#x27;id&#x27;,
+ &#x27;VERIFYING_KEY&#x27;: &#x27;********************&#x27;}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_DIRS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATICFILES_FINDERS</td>
+          <td class="code"><pre>[&#x27;django.contrib.staticfiles.finders.FileSystemFinder&#x27;,
+ &#x27;django.contrib.staticfiles.finders.AppDirectoriesFinder&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_ROOT</td>
+          <td class="code"><pre>None</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STATIC_URL</td>
+          <td class="code"><pre>&#x27;/static/&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>STORAGES</td>
+          <td class="code"><pre>{&#x27;default&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.core.files.storage.FileSystemStorage&#x27;},
+ &#x27;staticfiles&#x27;: {&#x27;BACKEND&#x27;: &#x27;django.contrib.staticfiles.storage.StaticFilesStorage&#x27;}}</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEMPLATES</td>
+          <td class="code"><pre>[{&#x27;APP_DIRS&#x27;: True,
+  &#x27;BACKEND&#x27;: &#x27;django.template.backends.django.DjangoTemplates&#x27;,
+  &#x27;DIRS&#x27;: [&quot;C:\\Users\\ADAM&#x27;S &quot;
+           &#x27;ProTek\\Desktop\\Repositories\\Backend\\BDG\\template&#x27;],
+  &#x27;OPTIONS&#x27;: {&#x27;context_processors&#x27;: [&#x27;django.template.context_processors.debug&#x27;,
+                                     &#x27;django.template.context_processors.request&#x27;,
+                                     &#x27;django.contrib.auth.context_processors.auth&#x27;,
+                                     &#x27;django.contrib.messages.context_processors.messages&#x27;]}}]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_NON_SERIALIZED_APPS</td>
+          <td class="code"><pre>[]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TEST_RUNNER</td>
+          <td class="code"><pre>&#x27;django.test.runner.DiscoverRunner&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>&#x27;,&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_FORMAT</td>
+          <td class="code"><pre>&#x27;P&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_INPUT_FORMATS</td>
+          <td class="code"><pre>[&#x27;%H:%M:%S&#x27;, &#x27;%H:%M:%S.%f&#x27;, &#x27;%H:%M&#x27;]</pre></td>
+        </tr>
+      
+        <tr>
+          <td>TIME_ZONE</td>
+          <td class="code"><pre>&#x27;UTC&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_I18N</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_THOUSAND_SEPARATOR</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_TZ</td>
+          <td class="code"><pre>True</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_HOST</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>USE_X_FORWARDED_PORT</td>
+          <td class="code"><pre>False</pre></td>
+        </tr>
+      
+        <tr>
+          <td>WSGI_APPLICATION</td>
+          <td class="code"><pre>&#x27;BDG.wsgi.application&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>X_FRAME_OPTIONS</td>
+          <td class="code"><pre>&#x27;DENY&#x27;</pre></td>
+        </tr>
+      
+        <tr>
+          <td>YEAR_MONTH_FORMAT</td>
+          <td class="code"><pre>&#x27;F Y&#x27;</pre></td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+</div>
+</main>
+
+
+  <footer id="explanation">
+    <p>
+      You’re seeing this error because you have <code>DEBUG = True</code> in your
+      Django settings file. Change that to <code>False</code>, and Django will
+      display a standard page generated by the handler for this status code.
+    </p>
+  </footer>
+
+</body>
+</html>
